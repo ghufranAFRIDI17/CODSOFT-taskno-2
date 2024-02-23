@@ -1,0 +1,153 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 512
+  ClientWidth = 424
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object mode: TButton
+    StyledSettings = [Family, FontColor]
+    Position.X = 159.000000000000000000
+    Position.Y = 272.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = '%'
+    TextSettings.Font.Size = 20.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.Trimming = None
+  end
+  object plus: TButton
+    StyledSettings = [Family, FontColor]
+    Position.X = 54.000000000000000000
+    Position.Y = 344.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = '+'
+    TextSettings.Font.Size = 22.000000000000000000
+    TextSettings.Font.StyleExt = {00090000000000000004000000}
+    TextSettings.Trimming = None
+  end
+  object multiply: TButton
+    StyledSettings = [Family, FontColor]
+    Position.X = 54.000000000000000000
+    Position.Y = 272.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'X'
+    TextSettings.Font.Size = 18.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.Trimming = None
+  end
+  object divide: TButton
+    StyledSettings = [Family, FontColor]
+    Position.X = 264.000000000000000000
+    Position.Y = 272.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = '/'
+    TextSettings.Font.Size = 20.000000000000000000
+    TextSettings.Font.StyleExt = {00090000000000000004000000}
+    TextSettings.Trimming = None
+  end
+  object input1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Position.X = 144.000000000000000000
+    Position.Y = 104.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object input2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    Position.X = 144.000000000000000000
+    Position.Y = 169.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    object output: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 6
+      Position.Y = 264.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object minus: TButton
+    StyledSettings = [Family, FontColor]
+    Position.X = 159.000000000000000000
+    Position.Y = 344.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    Text = '-'
+    TextSettings.Font.Size = 28.000000000000000000
+    TextSettings.Font.StyleExt = {00090000000000000004000000}
+    TextSettings.Trimming = None
+  end
+  object clear: TButton
+    StyledSettings = [Family, FontColor]
+    Position.X = 264.000000000000000000
+    Position.Y = 344.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    Text = 'Clear'
+    TextSettings.Font.Size = 20.000000000000000000
+    TextSettings.Font.StyleExt = {00090000000000000004000000}
+    TextSettings.Trimming = None
+  end
+  object input1L: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 55.000000000000000000
+    Position.Y = 104.000000000000000000
+    Size.Width = 96.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    TextSettings.Font.StyleExt = {00090000000000000004000000}
+    TextSettings.Trimming = None
+    Text = 'Input 1 :'
+    TabOrder = 11
+    object input2L: TLabel
+      StyledSettings = [Family, FontColor]
+      Position.Y = 65.000000000000000000
+      Size.Width = 96.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00090000000000000004000000}
+      TextSettings.Trimming = None
+      Text = 'Input 2 :'
+      TabOrder = 4
+      OnClick = input2LClick
+      object outputL: TLabel
+        StyledSettings = [Family, FontColor]
+        Position.Y = 264.000000000000000000
+        Size.Width = 96.000000000000000000
+        Size.Height = 57.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.Font.StyleExt = {00090000000000000004000000}
+        TextSettings.Trimming = None
+        Text = 'Output :'
+        TabOrder = 4
+      end
+    end
+  end
+end
